@@ -85,3 +85,58 @@
     
 })(jQuery);
 
+// JavaScript for filtering course details based on status
+function filterAll() {
+      var table, tr, i, j;
+      table = document.getElementById("courseDetails");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+          tr[i].style.display = "";
+        }
+      }
+    }
+
+    function filterPopular() {
+      var status, found, table, tr, td, i, j;
+      status = "Popular";
+      table = document.getElementById("courseDetails");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+          if (td[j].textContent == status) {
+            found = true;
+          }
+        }
+        if (found) {
+          tr[i].style.display = "";
+          found = false;
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+
+    function filterArchitecting() {
+      var status, found, table, tr, td, i, j;
+      status = "Architecting";
+      table = document.getElementById("courseDetails");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+          if (td[j].textContent == status) {
+            found = true;
+          }
+        }
+        if (found) {
+          tr[i].style.display = "";
+          found = false;
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+
