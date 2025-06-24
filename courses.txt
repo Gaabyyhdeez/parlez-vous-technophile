@@ -1,0 +1,52 @@
+- Popular
+GCP Fundamentals: Core Infrastructure (GCPFCI)
+BigData & Machine Learning Fundamentals (GCF-BDM)
+Getting Started Kubernetes Engine (GSGKE)
+Getting Started with Terraform (TFGC)
+Architecting GCP Design & Process (AGCP-DP)
+- Architecting
+Architecting with G Kubernetes (AGKE)
+Architecting with Compute Engine (ACE)
+Core Infrastructure for AWS professionals (GCPAWS)
+Core Infrastructure for Azure professionals (GCPIFAP)
+Logging, Monitoring and Observability (LMOGC)
+Networking in Google Cloud (NGCP)
+Security in Google Cloud (NGCP)
+- Dev
+Building Solutions with Apigee X (APIGEEX)
+Developing APIs with Apigee API Platform (APIGEE)
+Developing Applications on GCP (GCPDEV)
+App Development with Cloud Run (APPRUN)
+- Data
+Data Engineering (DEGCP)
+Data Warehousing with BigQuery (DWBQ)
+Machine Learning on GCP (GCPML)
+Vertex Forecasting and Time Series in Practice (VFTS)
+Introduction to Looker Studio Pro
+Developing Data Models with LookML
+Cloud Hero (Hackathon)
+- GenAI
+GenAI: Industry Use Cases for Generative AI
+Interactive Chat for Applications using Gen AI Studio
+Introduction to Generative AI for Business Leaders
+Introduction to Generative AI for Business Users
+Introduction to Responsible AI in Practice
+Text Generation for Applications using Generative AI Studio
+Vertex AI Model Garden
+- Cert Exams Preparation: 
+Cloud Digital Leader
+Associate Cloud Engineer
+Cloud Architect
+Cloud Data Engineer
+Cloud Security Engineer
+Cloud Networking Engineer
+Cloud Developer
+Cloud DevOps Engineer
+- Google Workspace: 
+Google Sheets Fundamentals
+Google Sheets Intermediate
+Google Sheets Advanced
+- Azure
+AZ-900
+DW-100
+PL-300
