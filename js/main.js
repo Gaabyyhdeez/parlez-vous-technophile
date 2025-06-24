@@ -119,9 +119,9 @@ function filterAll() {
       }
     }
 
-    function filterArchitecting() {
+    function filterInfrastructure() {
       var status, found, table, tr, td, i, j;
-      status = "Architecting";
+      status = "Infrastructure";
       table = document.getElementById("courseDetails");
       tr = table.getElementsByTagName("tr");
       for (i = 0; i < tr.length; i++) {
@@ -140,3 +140,23 @@ function filterAll() {
       }
     }
 
+    function filterDevelopment() {
+      var status, found, table, tr, td, i, j;
+      status = "Development";
+      table = document.getElementById("courseDetails");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        for (j = 0; j < td.length; j++) {
+          if (td[j].textContent == status) {
+            found = true;
+          }
+        }
+        if (found) {
+          tr[i].style.display = "";
+          found = false;
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }

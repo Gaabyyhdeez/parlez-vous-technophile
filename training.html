@@ -326,7 +326,7 @@
         </div>
     </div>
     <!-- Features End -->
-     
+
     <!-- Tabla de cursos INICIA -->
     <section class="container g-2 py-5">
         <!-- DROPDOWN -->
@@ -337,13 +337,22 @@
             </button>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                 <li>
-                <a class="dropdown-item" onclick="filterAll()">All</a>
+                    <a class="dropdown-item" onclick="filterAll()">All</a>
                 </li>
                 <li>
-                <a class="dropdown-item" onclick="filterPopular()">Popular</a>
+                    <a class="dropdown-item" onclick="filterPopular()">Popular</a>
                 </li>
                 <li>
-                <a class="dropdown-item" onclick="filterArchitecting()">Architecting</a>
+                    <a class="dropdown-item" onclick="filterInfrastructure()">Infrastructure</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" onclick="filterDevelopment()">Development</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" onclick="filterData()">Data</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" onclick="filterGenai()">Genai</a>
                 </li>
             </ul>
         </div>
@@ -351,6 +360,7 @@
         <div class="table-responsive mt-4 p-4 wrapper rounded-3">
             <table class="table table-hover caption-top table-borderless">
                 <caption>List of courses available</caption>
+                <!--  https://storage.googleapis.com/cloud-training/CLS_LIVE_DataSheets/Live_Data_Sheets/English/T-GCPDEV-I_DS_EN.pdf -->
                 <thead class="border-bottom" >
                     <tr>
                         <th>ID</th>
@@ -360,46 +370,134 @@
                     </tr>
                 </thead>
                 <tbody class="table-hover " id="courseDetails">
+                    <!-- POPULAR -->
                     <tr>
-                        <td>GCPFCI</td>
-                        <td><a href="https://www.google.com">Fundamentals: Core Infrastructure</a></td>
+                        <td>T-GCPFCI-B</td>
+                        <td><a href="https://www.google.com">Google Cloud Platform Fundamentals: Core Infrastructure</a></td>
                         <td><span class="popular">Popular</span></td>
-                        <td>Introduction</td>
+                        <td>Beginner</td>
                     </tr>
                     <tr>
-                        <td>GCF-BDM</td>
-                        <td><a href="https://www.google.com">BigData & Machine Learning Fundamentals</a></td>
+                        <td>T-GCPBDML-B</td>
+                        <td><a href="https://www.google.com">Google Cloud Big Data & Machine Learning Fundamentals </a></td>
                         <td><span class="popular">Popular</span></td>
                         <td>Beginner</td>
                     </tr>
                     <tr">
-                        <td>GSGKE</td>
-                        <td><a href="https://www.google.com">Getting Started Kubernetes Engine</a></td>
+                        <td>T-KUBGKE-I</td>
+                        <td><a href="https://www.google.com"> Getting Started with Google Kubernetes Engine</a></td>
                         <td><span class="popular">Popular</span></td>
                         <td>Beginner</td>
                     </tr>
                     <tr>
-                        <td>TFGC</td>
-                        <td><a href="https://www.google.com">Getting Started with Terraform</a></td>
+                        <td>T-TFGC-B</td>
+                        <td><a href="https://www.google.com">Getting Started with Terraform for Google Cloud</a></td>
                         <td><span class="popular">Popular</span></td>
                         <td>Beginner</td>
                     </tr>
+                    <!-- INFRAESTRUCTURA -->
                     <tr>
-                        <td>AGCP-DP</td>
-                        <td><a href="https://www.google.com">Architecting GCP Design & Process</a></td>
-                        <td><span class="architecting">Architecting</span></td>
+                        <td>T-GCPIDP-I</td>
+                        <td><a href="https://www.google.com">Architecting with Google Cloud: Design and Process</a></td>
+                        <td><span class="infrastructure">Infrastructure</span></td>
                         <td>Beginner</td>
                     </tr>
                     <tr>
-                        <td>ACE</td>
-                        <td><a href="https://www.google.com">Architecting with Compute Engine</a></td>
-                        <td><span class="architecting">Architecting</span></td>
+                        <td>T-GCPIA-I</td>
+                        <td><a href="https://www.google.com">Architecting with Google Compute Engine</a></td>
+                        <td><span class="infrastructure">Infrastructure</span></td>
                         <td>Intermediate</td>
                     </tr>
                     <tr>
+                        <td>T-AK8S-I</td>
+                        <td><a href="https://www.google.com">Architecting with Google Kubernetes Engine</a></td>
+                        <td><span class="infrastructure">Infrastructure</span></td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>GCPAWS</td>
+                        <td><a href="https://www.google.com">Google Cloud Infrastructure for AWS Professionals </a></td>
+                        <td><span class="infrastructure">Infrastructure</span></td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>GCPIFAP</td>
+                        <td><a href="https://www.google.com">Google Cloud Infrastructure for Azure Professionals</a></td>
+                        <td><span class="infrastructure">Infrastructure</span></td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>T-STACKD-B</td>
+                        <td><a href="https://www.google.com">Logging, Monitoring and Observability in Google Cloud </a></td>
+                        <td><span class="infrastructure">Infrastructure</span></td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>T-GCPNET-I</td>
+                        <td><a href="https://www.google.com">Networking in Google Cloud</a></td>
+                        <td><span class="infrastructure">Infrastructure</span></td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>T-GCPSEC-I</td>
+                        <td><a href="https://www.google.com">Security in Google Cloud Platform </a></td>
+                        <td><span class="infrastructure">Infrastructure</span></td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <!-- DEVELOPMENT -->
+                    <tr>
+                        <td>T-APPRUN-B</td>
+                        <td><a href="https://www.google.com">Application Development with Cloud Run </a></td>
+                        <td><span class="development">Development</span></td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>T-GCPDEV-I</td>
+                        <td><a href="https://www.google.com">Developing Applications with Google Cloud </a></td>
+                        <td><span class="development">Development</span></td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>T-DEVFND-B</td>
+                        <td><a href="https://www.google.com">Developing Applications with Google Cloud: Foundations</a></td>
+                        <td><span class="development">Development</span></td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>T-DVCRUN-B</td>
+                        <td><a href="https://www.google.com">Developing Applications with Cloud Run on Google Cloud: Fundamentals</a></td>
+                        <td><span class="development">Development</span></td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>T-DVCNTA-B</td>
+                        <td><a href="https://www.google.com">Developing Containerized Applications on Google Cloud</a></td>
+                        <td><span class="development">Development</span></td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>T-DVFUNC-I</td>
+                        <td><a href="https://www.google.com">Developing Applications with Cloud Functions on Google Cloud</a></td>
+                        <td><span class="development">Development</span></td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>T-APIENG-B</td>
+                        <td><a href="https://www.google.com">Developing APIs with Google Cloud's Apigee API Platform </a></td>
+                        <td><span class="development">Development</span></td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>APIGEEX</td>
+                        <td><a href="https://www.google.com">Building Solutions with Apigee X</a></td>
+                        <td><span class="development">Development</span></td>
+                        <td>Advanced</td>
+                    </tr>
+                    <!-- DATA -->
+                    <tr>
                         <td>numberID</td>
                         <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
+                        <td><span class="development">Architecting</span></td>
                         <td>Sree</td>
                     </tr>
                     <tr>
@@ -444,90 +542,7 @@
                         <td><span class="architecting">Architecting</span></td>
                         <td>Sree</td>
                     </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
-                    <tr>
-                        <td>numberID</td>
-                        <td><a href="https://www.google.com">STDID233</a></td>
-                        <td><span class="architecting">Architecting</span></td>
-                        <td>Sree</td>
-                    </tr>
+                    <!-- GenAI -->
                     <tr>
                         <td>numberID</td>
                         <td><a href="https://www.google.com">STDID233</a></td>
