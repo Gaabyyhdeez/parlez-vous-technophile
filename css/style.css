@@ -1,3 +1,43 @@
+/* Style for the Top Notification Bar */
+.top-notification-bar {
+    position: fixed; /* Makes it stay at the top even when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%; /* Spans the full width of the viewport */
+    background-color: #34A853; /* Dark background, common for sale notifications */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0; /* Vertical padding */
+    font-size: 1.1rem;
+    font-weight: bold;
+    z-index: 1060; /* Ensures it's above most other elements, especially Bootstrap navbars (which are often z-index 1050) */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+.top-notification-bar .days-left {
+    color: #ffc107; /* A contrasting color for the number of days, e.g., Bootstrap's yellow */
+    margin: 0 5px;
+}
+
+.top-notification-bar .close-notification-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1; /* Ensures the 'x' is vertically centered */
+    padding: 0 5px; /* Add some padding for easier clicking */
+}
+
+.top-notification-bar .close-notification-btn:hover {
+    color: #ddd;
+}
+
+
 /********** Template CSS **********/
 
 .back-to-top {
@@ -573,3 +613,6 @@
 .copyright a:hover {
     color: var(--bs-primary);
 }
+
+
+
